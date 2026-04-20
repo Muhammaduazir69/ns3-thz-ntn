@@ -12,22 +12,22 @@ Research-grade extension to the `ns3-ntn-toolkit` that adds full **Terahertz (10
 
 ## Key Features
 
-| Capability | Description |
-|---|---|
-| **HITRAN molecular absorption** | Altitude-stratified atmosphere (ITU-R P.835) with H2O and O2 absorption lines 100 GHz -- 10 THz |
-| **Weather attenuation** | ITU-R P.838/P.840 rain, fog, snow, dust models extended to THz |
-| **Scintillation** | ITU-R P.618 amplitude + phase scintillation with AR(1) time series |
-| **Pointing error** | Vibration, J2 perturbation, atmospheric refraction, tracking latency |
-| **Hardware impairments** | Rapp / Saleh PA, Lorentzian phase noise, ADC SQNR, I/Q imbalance, DPD |
-| **Ultra-Massive MIMO** | UPA / UCA / Cassegrain arrays up to 128x128 elements with beam squint |
-| **Hierarchical beamforming** | DFT codebook, multi-resolution search, hybrid analog + digital |
-| **EKF beam tracking** | Satellite ephemeris-assisted Kalman filter for LEO pointing |
-| **Inter-Satellite Links** | Vacuum propagation at THz with Dijkstra routing and Doppler |
-| **Reconfigurable Intelligent Surfaces** | Space-borne / aerial / ground RIS with N^2 SNR scaling |
-| **ISAC** | Joint radar-communication for space debris (cm-level resolution) |
-| **Novel waveforms** | OFDM / DFT-s-OFDM / OTFS / AFDM / SC-FDE for high-Doppler LEO |
-| **Atmospheric windows** | 140 / 220 / 340 / 410 / 460 GHz sub-THz windows |
-| **O-RAN integration** | THz-aware xApps (beam management, spectrum, RIS, ISAC) |
+| Capability                                    | Description                                                                                     |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **HITRAN molecular absorption**         | Altitude-stratified atmosphere (ITU-R P.835) with H2O and O2 absorption lines 100 GHz -- 10 THz |
+| **Weather attenuation**                 | ITU-R P.838/P.840 rain, fog, snow, dust models extended to THz                                  |
+| **Scintillation**                       | ITU-R P.618 amplitude + phase scintillation with AR(1) time series                              |
+| **Pointing error**                      | Vibration, J2 perturbation, atmospheric refraction, tracking latency                            |
+| **Hardware impairments**                | Rapp / Saleh PA, Lorentzian phase noise, ADC SQNR, I/Q imbalance, DPD                           |
+| **Ultra-Massive MIMO**                  | UPA / UCA / Cassegrain arrays up to 128x128 elements with beam squint                           |
+| **Hierarchical beamforming**            | DFT codebook, multi-resolution search, hybrid analog + digital                                  |
+| **EKF beam tracking**                   | Satellite ephemeris-assisted Kalman filter for LEO pointing                                     |
+| **Inter-Satellite Links**               | Vacuum propagation at THz with Dijkstra routing and Doppler                                     |
+| **Reconfigurable Intelligent Surfaces** | Space-borne / aerial / ground RIS with N^2 SNR scaling                                          |
+| **ISAC**                                | Joint radar-communication for space debris (cm-level resolution)                                |
+| **Novel waveforms**                     | OFDM / DFT-s-OFDM / OTFS / AFDM / SC-FDE for high-Doppler LEO                                   |
+| **Atmospheric windows**                 | 140 / 220 / 340 / 410 / 460 GHz sub-THz windows                                                 |
+| **O-RAN integration**                   | THz-aware xApps (beam management, spectrum, RIS, ISAC)                                          |
 
 ## Deep Module Integration (Not Standalone)
 
@@ -40,10 +40,6 @@ Unlike hobbyist THz modules, every value in `thz-ntn` flows through the **actual
 - `ThzNtnAntennaArray` can delegate to `SatAntennaGainPattern` for beam patterns
 - `ThzNtnBeamTracking` EKF state updated from satellite `MobilityModel::GetVelocity()`
 - Doppler / distance / elevation / altitude all derived from real `MobilityModel` 3D positions
-
-**No hardcoded values.** Every loss, gain, capacity, and metric is computed from actual physics using actual parameters.
-
----
 
 ## Repository Layout
 
