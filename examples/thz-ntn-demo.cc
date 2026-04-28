@@ -499,7 +499,7 @@ static void
 Example8_BeamTracking()
 {
     std::cout << "\n================================================================\n";
-    std::cout << "  Example 8: Beam Tracking During 60-sec LEO Pass\n";
+    std::cout << "  Example 8: Beam Tracking During 600-sec LEO Pass\n";
     std::cout << "================================================================\n";
 
     Ptr<ThzNtnBeamTracking> bt = CreateObject<ThzNtnBeamTracking>();
@@ -515,10 +515,13 @@ Example8_BeamTracking()
     std::cout << " Time  SatAngle  Dist_km  Elev_deg  SNR_dB  Cap_Gbps\n";
     std::cout << "-------------------------------------------------------\n";
 
-    // Simulate LEO pass: satellite moves from -10 to +10 degrees at 550 km altitude
-    for (double t = 0.0; t <= 60.0; t += 5.0)
+    // Realistic 600-s LEO pass: satellite traverses -10 deg to +10 deg
+    // off-zenith at 550 km altitude, sampled every 10 s (61 samples).
+    const double T_PASS = 600.0;
+    const double T_STEP = 10.0;
+    for (double t = 0.0; t <= T_PASS + 1e-9; t += T_STEP)
     {
-        double satAngle = -10.0 + (20.0 * t / 60.0);
+        double satAngle = -10.0 + (20.0 * t / T_PASS);
         Ptr<MobilityModel> sat = CreateSatellite(550.0, satAngle);
         auto r = lb->ComputeTeraLinkBudget(sat, ground);
 
