@@ -1,186 +1,110 @@
-# ns-3 THz-NTN Module
+<h1 align="center">thz-ntn</h1>
 
-> **World's First ns-3 Module for Terahertz Non-Terrestrial Networks with Deep Satellite + mmWave + O-RAN Integration**
+<p align="center"><strong>100 GHz – 1 THz physics module for ns-3.43 — HITRAN-2020 line-by-line, ITU-R P.835/676/618/838, UM-MIMO, RIS, ISAC</strong></p>
 
-[![ns-3](https://img.shields.io/badge/ns--3-3.43-blue)](https://www.nsnam.org/)
-[![License: GPL-2.0](https://img.shields.io/badge/License-GPL--2.0-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-[![Tests](https://img.shields.io/badge/tests-12%2F12%20passing-green)]()
+<p align="center">
+  <a href="https://www.nsnam.org"><img src="https://img.shields.io/badge/ns--3-3.43-blue.svg"/></a>
+  <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/license-GPL--2.0-green.svg"/></a>
+  <img src="https://img.shields.io/badge/HITRAN-2020-orange.svg"/>
+  <img src="https://img.shields.io/badge/UM--MIMO-up%20to%20128×128-purple.svg"/>
+  <img src="https://img.shields.io/badge/tests-12%2F12%20passing-success.svg"/>
+</p>
 
-Research-grade extension to the `ns3-ntn-toolkit` that adds full **Terahertz (100 GHz -- 10 THz)** capabilities to the integrated satellite/mmWave/O-RAN simulation stack. Designed in collaboration with UNLab (Northeastern University) for use with sub-THz missions such as **TeraLink-1** (NSF Award #2346487).
-
----
-
-## Key Features
-
-| Capability                                    | Description                                                                                     |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| **HITRAN molecular absorption**         | Altitude-stratified atmosphere (ITU-R P.835) with H2O and O2 absorption lines 100 GHz -- 10 THz |
-| **Weather attenuation**                 | ITU-R P.838/P.840 rain, fog, snow, dust models extended to THz                                  |
-| **Scintillation**                       | ITU-R P.618 amplitude + phase scintillation with AR(1) time series                              |
-| **Pointing error**                      | Vibration, J2 perturbation, atmospheric refraction, tracking latency                            |
-| **Hardware impairments**                | Rapp / Saleh PA, Lorentzian phase noise, ADC SQNR, I/Q imbalance, DPD                           |
-| **Ultra-Massive MIMO**                  | UPA / UCA / Cassegrain arrays up to 128x128 elements with beam squint                           |
-| **Hierarchical beamforming**            | DFT codebook, multi-resolution search, hybrid analog + digital                                  |
-| **EKF beam tracking**                   | Satellite ephemeris-assisted Kalman filter for LEO pointing                                     |
-| **Inter-Satellite Links**               | Vacuum propagation at THz with Dijkstra routing and Doppler                                     |
-| **Reconfigurable Intelligent Surfaces** | Space-borne / aerial / ground RIS with N^2 SNR scaling                                          |
-| **ISAC**                                | Joint radar-communication for space debris (cm-level resolution)                                |
-| **Novel waveforms**                     | OFDM / DFT-s-OFDM / OTFS / AFDM / SC-FDE for high-Doppler LEO                                   |
-| **Atmospheric windows**                 | 140 / 220 / 340 / 410 / 460 GHz sub-THz windows                                                 |
-| **O-RAN integration**                   | THz-aware xApps (beam management, spectrum, RIS, ISAC)                                          |
-
-## Deep Module Integration (Not Standalone)
-
-Unlike hobbyist THz modules, every value in `thz-ntn` flows through the **actual satellite and mmWave module APIs**:
-
-- `ThzNtnFreeSpaceLoss` **extends `SatFreeSpaceLoss`** -- drop-in replacement for the satellite channel pipeline
-- `ThzNtnPhy` uses actual `SpectrumValue` PSDs through `mmWaveInterference`
-- `ThzNtnPhySat` delegates MCS selection to `SatWaveformConf::GetBestWaveformId()`
-- `ThzNtnMac` filters sub-bands using `ThzNtnMolecularAbsorption` with actual `MobilityModel` positions
-- `ThzNtnAntennaArray` can delegate to `SatAntennaGainPattern` for beam patterns
-- `ThzNtnBeamTracking` EKF state updated from satellite `MobilityModel::GetVelocity()`
-- Doppler / distance / elevation / altitude all derived from real `MobilityModel` 3D positions
-
-## Repository Layout
-
-```
-contrib/thz-ntn/
-├── model/                      # 48 source files (24 .h + 24 .cc)
-│   ├── thz-ntn-channel-model.{h,cc}
-│   ├── thz-ntn-free-space-loss.{h,cc}    # Extends SatFreeSpaceLoss
-│   ├── thz-ntn-molecular-absorption.{h,cc}
-│   ├── thz-ntn-weather-attenuation.{h,cc}
-│   ├── thz-ntn-scintillation.{h,cc}
-│   ├── thz-ntn-pointing-error.{h,cc}
-│   ├── thz-ntn-hardware-impairments.{h,cc}
-│   ├── thz-ntn-spectrum.{h,cc}
-│   ├── thz-ntn-link-budget.{h,cc}
-│   ├── thz-ntn-phy*.{h,cc}                # Base / Sat / Ground
-│   ├── thz-ntn-waveform.{h,cc}            # OFDM / OTFS / AFDM / ...
-│   ├── thz-ntn-antenna-array.{h,cc}       # UM-MIMO / Cassegrain
-│   ├── thz-ntn-beamforming.{h,cc}         # Hierarchical DFT codebook
-│   ├── thz-ntn-beam-tracking.{h,cc}       # EKF predictor
-│   ├── thz-ntn-mac*.{h,cc}
-│   ├── thz-ntn-isl-{channel,link}.{h,cc}
-│   ├── thz-ntn-ris*.{h,cc}
-│   └── thz-ntn-isac*.{h,cc}
-├── helper/                     # 2 source files
-│   └── thz-ntn-helper.{h,cc}
-├── examples/                   # 8 scenario scripts (in-tree) +
-│                                # scratch/thz-ntn-demo.cc (runnable)
-├── test/                       # 1 test suite with 12 tests
-├── doc/                        # Detailed docs (this directory)
-└── CMakeLists.txt
-```
+<p align="center">
+  <img src="docs/architecture.png" alt="thz-ntn architecture" width="900"/>
+</p>
 
 ---
 
-## Quick Start
+## Why this module
 
-### 1. Build
+The 100 GHz – 1 THz window is the near-term target for high-capacity satellite ISL and ground links — but until now ns-3 had no **physics-grounded** propagation, beam-tracking, or ISAC stack at these frequencies. `thz-ntn` provides one. The composite channel cascades **FSPL → HITRAN-2020 molecular absorption → weather (P.838/P.840) → P.618 scintillation → composite pointing error → hardware impairments**, all validated against ITU-R P.676-13 (residual ≤ 0.54 dB) and the *am* atmospheric simulator (residual ≤ 0.33 dB).
+
+## At a glance
+
+| Metric | Value |
+|---|---|
+| Frequency range | **100 GHz – 1 THz** |
+| HITRAN-2020 absorption lines | 2.7 M (H₂O + O₂, Van Vleck-Weisskopf, Voigt) |
+| Atmospheric profile | ITU-R P.835 6-layer standard |
+| UM-MIMO array sizes | up to **128×128** (47 dBi @ 16 384 elements) |
+| RIS sizes | up to 4 096 elements with 2-bit phase quantisation |
+| ISAC range CRLB (2-cm debris) | **5.1 m @ 8.2 dB SNR @ 10 m** |
+| Validation residual vs ITU-R P.676 | **≤ 0.54 dB** |
+| Tests | **12 / 12 passing** · 9 example scenarios |
+
+## What it does
+
+- `ThzNtnChannelModel` (extends ns-3 `PropagationLossModel`) — composite cascade
+- HITRAN-2020 line-by-line integrator over an ITU-R P.835 6-layer atmosphere
+- ITU-R P.618 amplitude + phase scintillation (extended into the strong-turbulence regime)
+- Composite pointing-error model: vibration ⊕ J₂ perturbation ⊕ atmospheric refraction ⊕ tracking latency
+- UM-MIMO array helper (UPA / UCA / Cassegrain) with beam-squint and DFT codebook
+- EKF beam tracker for satellite-ephemeris-assisted LEO pointing
+- RIS (space / aerial / ground) with N² perfect-CSI scaling and 2-bit quantisation loss model
+- ISAC subsystem: CRLB on range for 2-cm / 10-cm / 1-m debris classes at 300 GHz
+- 5 candidate waveforms (OFDM / DFT-s-OFDM / OTFS / AFDM / SC-FDE)
+- 9 reference scenarios + 12 unit tests, all under `examples/` and `test/`
+
+## Live demos
+
+### LEO 300 GHz beam-tracking — EKF pointing-error vs 3GPP target
+
+<p align="center">
+  <img src="docs/thz_beam_tracking.gif" alt="THz beam tracking" width="850"/>
+</p>
+
+### Reconfigurable Intelligent Surface — array-factor sweep & SNR gain
+
+<p align="center">
+  <img src="docs/thz_ris_sweep.gif" alt="RIS sweep" width="850"/>
+</p>
+
+## Install & run
+
+See [**INSTALL.md**](INSTALL.md) for full setup.
+
+Quick taste:
 
 ```bash
-cd ns-3-dev
-./ns3 configure --enable-modules=thz-ntn
+git clone https://github.com/Muhammaduazir69/ns3-thz-ntn.git contrib/thz-ntn
+./ns3 configure --enable-examples --enable-tests
 ./ns3 build thz-ntn
+./ns3 run "thz-ntn-demo --example=7"     # atmospheric windows
+./ns3 run "thz-ntn-demo --example=8"     # 600-s LEO beam-tracking pass
 ```
-
-### 2. Run tests
-
-```bash
-./ns3 run "test-runner --suite=thz-ntn --verbose"
-```
-
-Expected: `PASS thz-ntn 0.030 s` with 12 passing tests.
-
-### 3. Run the demo
-
-Copy `examples/thz-ntn-demo.cc` to `scratch/` (or use the ready-made scratch version), then:
-
-```bash
-./ns3 build scratch/thz-ntn-demo
-./build/scratch/ns3.43-thz-ntn-demo-debug                 # All 8 scenarios
-./build/scratch/ns3.43-thz-ntn-demo-debug --example=1      # Just scenario 1
-```
-
-CSV datasets land in `thz-ntn-results/` (see [doc/EXAMPLES.md](doc/EXAMPLES.md) for details).
-
----
 
 ## Documentation
 
-- [doc/EXAMPLES.md](doc/EXAMPLES.md) -- Walk-through of all 8 demo scenarios with expected values
-- [doc/MODULE_REFERENCE.md](doc/MODULE_REFERENCE.md) -- Per-class reference (APIs, attributes, formulas)
-- [doc/INTEGRATION.md](doc/INTEGRATION.md) -- How this module hooks into the satellite and mmWave pipelines
-- [doc/VALIDATION.md](doc/VALIDATION.md) -- Verified against analytical formulas and ITU-R models
+- [INSTALL.md](INSTALL.md) — full setup + dependency notes
+- [docs/architecture.png](docs/architecture.png) — module architecture
+- Reference paper: *A Physics-Grounded 300 GHz – 1 THz LEO-NTN Model*, IEEE T-TST, in submission
 
----
-
-## Minimal Usage Example
-
-```cpp
-#include <ns3/thz-ntn-link-budget.h>
-#include <ns3/thz-ntn-free-space-loss.h>
-#include <ns3/thz-ntn-molecular-absorption.h>
-#include <ns3/constant-position-mobility-model.h>
-
-using namespace ns3;
-
-// Set up the full loss stack
-auto absorption = CreateObject<ThzNtnMolecularAbsorption>();
-auto fsl        = CreateObject<ThzNtnFreeSpaceLoss>();
-fsl->SetMolecularAbsorptionModel(absorption);
-fsl->EnableMolecularAbsorption(true);
-
-// Link budget with actual positions
-auto ground = CreateObject<ConstantPositionMobilityModel>();
-ground->SetPosition(Vector(6371000, 0, 0));
-auto sat    = CreateObject<ConstantPositionMobilityModel>();
-sat->SetPosition(Vector(6371000 + 550000, 0, 0));
-
-auto lb = CreateObject<ThzNtnLinkBudget>();
-lb->SetFreeSpaceLossModel(fsl);
-auto result = lb->ComputeTeraLinkBudget(sat, ground);
-
-std::cout << "FSPL:         " << result.fspl_dB              << " dB\n";
-std::cout << "Absorption:   " << result.molecularAbsorption_dB<< " dB\n";
-std::cout << "SNR:          " << result.snr_dB               << " dB\n";
-std::cout << "Capacity:     " << result.shannonCapacity_Gbps << " Gbps\n";
-```
-
-At 225 GHz, LEO 550 km, zenith: **FSPL=194.30 dB** (matches `20*log10(4*pi*d*f/c)` exactly).
-
----
-
-## Tested Environment
-
-- ns-3.43 on Ubuntu 24.04
-- GCC 14, CMake 3.27
-- Eigen3, Boost, GSL, SQLite3
-
-## Citation
+## Cite this work
 
 ```bibtex
 @misc{uzair2026thzntn,
-  author       = {Muhammad Uzair},
-  title        = {ns-3 THz-NTN Module: Terahertz Non-Terrestrial Networks
-                  with Integrated Satellite and mmWave Simulation},
-  year         = {2026},
-  howpublished = {\url{https://github.com/Muhammaduazir69/ns3-thz-ntn}}
+  author = {Uzair, Muhammad},
+  title  = {thz-ntn: 100 GHz – 1 THz Physics Module for ns-3.43 LEO-NTN},
+  year   = {2026},
+  url    = {https://github.com/Muhammaduazir69/ns3-thz-ntn}
 }
 ```
 
+## Part of the ns3-ntn-toolkit
+
+| Module | Repo |
+|---|---|
+| Toolkit (umbrella) | [ns3-ntn-toolkit](https://github.com/Muhammaduazir69/ns3-ntn-toolkit) |
+| ntn-cho | [ntn-cho-framework](https://github.com/Muhammaduazir69/ntn-cho-framework) |
+| oran-ntn | [oran-ntn](https://github.com/Muhammaduazir69/oran-ntn) |
+| **thz-ntn** | this repo |
+| ns3-ai (fork) | [ns3-ai](https://github.com/Muhammaduazir69/ns3-ai) |
+
 ## License
 
-GPL-2.0-only (same as the satellite module it extends).
+GPL-2.0-only — see [LICENSE](LICENSE).
 
 ## Acknowledgements
 
-- UNLab at Northeastern University (Prof. J. M. Jornet) for `TeraSim` inspiration and THz-NTN research direction
-- Magister Solutions for SNS3 satellite module
-- NYU Wireless for the ns-3 mmWave module
-- ITU-R, 3GPP TR 38.811, and ESA D-band satellite links project for propagation models
-
----
-
-**Muhammad Uzair** - 2026 - Independent Researcher - 5G/6G NTN
+ns-3 core team · SNS3 maintainers · HITRAN team (CFA Harvard) · *am* atmospheric simulator (Paine, SAO) · ITU-R P.676/P.618/P.835 specifications.
