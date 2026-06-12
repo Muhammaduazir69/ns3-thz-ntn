@@ -6,6 +6,13 @@
  * to ./thz-ntn-results/ for further analysis and plotting.
  *
  * All values computed from actual sub-models with proper wiring.
+ *
+ * Analysis-only example: parametric geometry, no packet transmission.
+ * All node positions are GEOCENTRIC (ECEF-style) Cartesian: ground stations
+ * on the Re sphere and satellites at |position| = Re + altitude (verified —
+ * the latitude-convention spherical conversion below preserves the radius
+ * exactly; e.g. a 550 km satellite has |position| ~= 6 921 000 m). The
+ * thz-ntn loss/elevation models auto-detect geocentric vs local frames.
  */
 
 #include <ns3/command-line.h>
@@ -40,6 +47,8 @@
 #include <string>
 #include <vector>
 
+#include <cstdio>
+
 using namespace ns3;
 
 static constexpr double R_E = 6371000.0;
@@ -50,6 +59,8 @@ static const std::string OUT_DIR = "thz-ntn-results";
 // Helpers
 // ----------------------------------------------------------------------------
 
+// Geocentric position from latitude/longitude (latitude convention:
+// x = r cos(lat) cos(lon), z = r sin(lat)). Sanity: |position| = Re exactly.
 static Ptr<MobilityModel>
 CreateGroundNode(double lat_deg = 0.0, double lon_deg = 0.0)
 {
@@ -62,6 +73,9 @@ CreateGroundNode(double lat_deg = 0.0, double lon_deg = 0.0)
     return mob;
 }
 
+// Geocentric satellite position; theta/phi are geocentric latitude/longitude
+// (NOT the physics polar angle). Sanity: |position| = Re + alt_km*1000 exactly
+// (~6 921 000 m for a 550 km orbit) — never z = altitude in this frame.
 static Ptr<MobilityModel>
 CreateSatellite(double alt_km, double theta_deg, double phi_deg = 0.0)
 {
@@ -194,6 +208,8 @@ Example2_ISL()
 
     for (double distKm : {100.0, 250.0, 500.0, 1000.0, 1500.0, 2000.0, 3000.0, 5000.0})
     {
+        // Geocentric orbital ring of radius Re + 550 km (|position| = Re + alt
+        // for both endpoints); the second satellite is `distKm` along the arc.
         Ptr<ConstantVelocityMobilityModel> sat1 =
             CreateObject<ConstantVelocityMobilityModel>();
         sat1->SetPosition(Vector(R_E + 550e3, 0, 0));
@@ -572,6 +588,10 @@ WriteSummary()
 int
 main(int argc, char* argv[])
 {
+    std::printf("[analytic-tool] This example drives the module's physics/calibration APIs\n"
+                "directly (link budgets, scaling laws, comparisons); it does NOT simulate a\n"
+                "packet data plane. For measured end-to-end KPIs on a real radio, see this\n"
+                "module's *-traffic / *-real-stack examples.\n\n");
     int example = 0;  // 0 = all
     CommandLine cmd;
     cmd.AddValue("example", "Example number to run (1-8), 0=all", example);

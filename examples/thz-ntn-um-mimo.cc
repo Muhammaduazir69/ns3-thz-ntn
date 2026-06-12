@@ -10,6 +10,10 @@
  * Computes gain, beamwidth, near-field distance, physical size,
  * and beam patterns for various array sizes.  Also compares with
  * a Cassegrain reflector antenna for ground terminal use.
+ *
+ * Analysis-only example: pure array/beamforming characterisation — there is
+ * no scenario geometry and no packet transmission. For arrays closed over a
+ * measured radio see thz-ntn-beam-tracking.
  */
 
 #include <ns3/command-line.h>
@@ -33,6 +37,8 @@ class ThzNtnBeamforming;
 #include "ns3/thz-ntn-antenna-array.h"
 #include "ns3/thz-ntn-beamforming.h"
 
+#include <cstdio>
+
 using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE("ThzNtnUmMimo");
@@ -40,6 +46,10 @@ NS_LOG_COMPONENT_DEFINE("ThzNtnUmMimo");
 int
 main(int argc, char* argv[])
 {
+    std::printf("[analytic-tool] This example drives the module's physics/calibration APIs\n"
+                "directly (link budgets, scaling laws, comparisons); it does NOT simulate a\n"
+                "packet data plane. For measured end-to-end KPIs on a real radio, see this\n"
+                "module's *-traffic / *-real-stack examples.\n\n");
     // ---- Default parameters ----
     double freq = 300e9;        // 300 GHz
     uint32_t numElements = 32;  // default array side
