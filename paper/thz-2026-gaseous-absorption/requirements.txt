@@ -1,0 +1,6 @@
+itur==0.4.0
+matplotlib==3.11.2
+numpy==2.5.4
+openpyxl==3.1.5
+pyrtlib==1.2.0
+scipy==1.18.1

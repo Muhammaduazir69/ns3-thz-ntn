@@ -1,0 +1,34 @@
+{
+ "order_am": [
+  "Csc",
+  "Prof",
+  "AnnexTwoVt",
+  "AnnexTwo",
+  "AnnexTwoRtw",
+  "AnnexTwoVtRtw"
+ ],
+ "order_p676": [
+  "Csc",
+  "AnnexTwoVt",
+  "Prof",
+  "AnnexTwoVtRtw",
+  "AnnexTwo",
+  "AnnexTwoRtw"
+ ],
+ "AmSlCscWorstDb": "0.64",
+ "AmSlCscWorstDbPsix": "0.64",
+ "AmSlAnnexTwoWorstDb": "6.6",
+ "AmSlAnnexTwoWorstDbPsix": "10.8",
+ "AmSlAnnexTwoVtWorstDb": "6.2",
+ "AmSlAnnexTwoVtWorstDbPsix": "1.9",
+ "AmSlAnnexTwoRtwWorstDb": "9.4",
+ "AmSlAnnexTwoRtwWorstDbPsix": "11.2",
+ "AmSlAnnexTwoVtRtwWorstDb": "12.5",
+ "AmSlAnnexTwoVtRtwWorstDbPsix": "7.9",
+ "AmSlProfWorstDb": "5.9",
+ "AmSlProfWorstDbPsix": "6.4",
+ "AmSlRankSame": "different",
+ "AmSlCases": "12",
+ "AmSlRefDiffMinPct": "0",
+ "AmSlRefDiffMaxPct": "22"
+}

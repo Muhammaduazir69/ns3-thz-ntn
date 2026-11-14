@@ -1,0 +1,1829 @@
+f %1 %2 %3 %4 %5 %6
+output f GHz tau
+za 0 deg
+tol 1e-5
+T0 2.7 K
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00373405 mbar
+Tbase 186.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0042898 mbar
+Tbase 188.47 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00497904 mbar
+Tbase 190.12 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00576336 mbar
+Tbase 191.76 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00665363 mbar
+Tbase 193.38 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00766167 mbar
+Tbase 194.98 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.00880035 mbar
+Tbase 196.57 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0100836 mbar
+Tbase 198.14 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0115265 mbar
+Tbase 199.7 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0131453 mbar
+Tbase 201.24 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0149575 mbar
+Tbase 202.77 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.016982 mbar
+Tbase 204.28 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.019239 mbar
+Tbase 205.78 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0217501 mbar
+Tbase 207.26 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0245385 mbar
+Tbase 208.73 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.027629 mbar
+Tbase 210.18 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0310477 mbar
+Tbase 211.62 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0348228 mbar
+Tbase 213.05 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0389839 mbar
+Tbase 214.46 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0435571 mbar
+Tbase 216.35 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0485673 mbar
+Tbase 218.29 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0540451 mbar
+Tbase 220.21 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0600233 mbar
+Tbase 222.11 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.066536 mbar
+Tbase 223.99 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0736188 mbar
+Tbase 225.86 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0813087 mbar
+Tbase 227.7 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0896441 mbar
+Tbase 229.53 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.0986646 mbar
+Tbase 231.34 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.108412 mbar
+Tbase 233.14 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.118927 mbar
+Tbase 234.91 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.130256 mbar
+Tbase 236.67 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.142442 mbar
+Tbase 238.41 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.155534 mbar
+Tbase 240.14 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.169577 mbar
+Tbase 241.84 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.184622 mbar
+Tbase 243.53 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.200718 mbar
+Tbase 245.21 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.217918 mbar
+Tbase 246.87 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.236274 mbar
+Tbase 248.51 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.255839 mbar
+Tbase 250.13 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.276668 mbar
+Tbase 251.74 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.298818 mbar
+Tbase 253.34 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.322345 mbar
+Tbase 254.92 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.347306 mbar
+Tbase 256.48 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.373761 mbar
+Tbase 258.03 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.401768 mbar
+Tbase 259.56 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.431388 mbar
+Tbase 261.08 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.462682 mbar
+Tbase 262.58 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.495711 mbar
+Tbase 264.07 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.530536 mbar
+Tbase 265.54 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.567221 mbar
+Tbase 267 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.605828 mbar
+Tbase 268.45 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.646421 mbar
+Tbase 269.88 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.689085 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.734071 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.781509 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.831503 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.884158 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.939582 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 0.997885 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.05918 mbar
+Tbase 270.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.12358 mbar
+Tbase 270.36 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.19145 mbar
+Tbase 269.07 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.26305 mbar
+Tbase 267.78 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.33855 mbar
+Tbase 266.51 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.41815 mbar
+Tbase 265.25 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.50204 mbar
+Tbase 264.01 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.59042 mbar
+Tbase 262.77 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.6835 mbar
+Tbase 261.55 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.7815 mbar
+Tbase 260.34 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.88465 mbar
+Tbase 259.14 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 1.99319 mbar
+Tbase 257.95 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 2.10735 mbar
+Tbase 256.78 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 2.22739 mbar
+Tbase 255.62 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 2.35357 mbar
+Tbase 254.46 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 2.48617 mbar
+Tbase 253.32 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 2.62547 mbar
+Tbase 252.19 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 2.77175 mbar
+Tbase 251.08 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 2.92533 mbar
+Tbase 249.97 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 3.0865 mbar
+Tbase 248.87 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 3.2556 mbar
+Tbase 247.79 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 3.43296 mbar
+Tbase 246.71 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 3.61892 mbar
+Tbase 245.65 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 3.81383 mbar
+Tbase 244.59 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 4.01806 mbar
+Tbase 243.55 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 4.232 mbar
+Tbase 242.52 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 4.45602 mbar
+Tbase 241.49 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 4.69054 mbar
+Tbase 240.48 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 4.93595 mbar
+Tbase 239.48 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 5.1927 mbar
+Tbase 238.48 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 5.46122 mbar
+Tbase 237.5 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 5.74196 mbar
+Tbase 236.53 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 6.03538 mbar
+Tbase 235.56 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 6.34196 mbar
+Tbase 234.61 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 6.66219 mbar
+Tbase 233.66 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 6.99657 mbar
+Tbase 232.73 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 7.34563 mbar
+Tbase 231.8 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 7.70988 mbar
+Tbase 230.88 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 8.08987 mbar
+Tbase 229.97 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 8.48617 mbar
+Tbase 229.07 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 8.89909 mbar
+Tbase 228.48 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 9.32857 mbar
+Tbase 228.17 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 9.77487 mbar
+Tbase 227.86 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 10.2384 mbar
+Tbase 227.55 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 10.7198 mbar
+Tbase 227.24 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 11.2193 mbar
+Tbase 226.94 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 11.7376 mbar
+Tbase 226.64 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 12.2751 mbar
+Tbase 226.34 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 12.8323 mbar
+Tbase 226.05 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 13.4096 mbar
+Tbase 225.76 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 14.0077 mbar
+Tbase 225.47 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 14.6269 mbar
+Tbase 225.18 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 15.2678 mbar
+Tbase 224.9 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 15.9308 mbar
+Tbase 224.62 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 16.6166 mbar
+Tbase 224.35 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 17.3256 mbar
+Tbase 224.07 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 18.0583 mbar
+Tbase 223.8 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 18.8153 mbar
+Tbase 223.53 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 19.5969 mbar
+Tbase 223.26 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 20.4039 mbar
+Tbase 223 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 21.2366 mbar
+Tbase 222.74 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 22.0955 mbar
+Tbase 222.48 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 22.9813 mbar
+Tbase 222.23 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 23.8944 mbar
+Tbase 221.97 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 24.8353 mbar
+Tbase 221.72 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 25.8045 mbar
+Tbase 221.47 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 26.8025 mbar
+Tbase 221.23 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 27.8299 mbar
+Tbase 220.98 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 28.887 mbar
+Tbase 220.74 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 29.9746 mbar
+Tbase 220.5 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 31.0929 mbar
+Tbase 220.27 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 32.2425 mbar
+Tbase 220.03 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 33.424 mbar
+Tbase 219.8 K
+column dry_air vmr
+column h2o vmr 2.000000e-06
+
+layer
+Pbase 34.6376 mbar
+Tbase 219.57 K
+column dry_air vmr
+column h2o vmr 2.130366e-06
+
+layer
+Pbase 35.8841 mbar
+Tbase 219.35 K
+column dry_air vmr
+column h2o vmr 2.304095e-06
+
+layer
+Pbase 37.1637 mbar
+Tbase 219.12 K
+column dry_air vmr
+column h2o vmr 2.489950e-06
+
+layer
+Pbase 38.4771 mbar
+Tbase 218.9 K
+column dry_air vmr
+column h2o vmr 2.688614e-06
+
+layer
+Pbase 39.8245 mbar
+Tbase 218.68 K
+column dry_air vmr
+column h2o vmr 2.900800e-06
+
+layer
+Pbase 41.2066 mbar
+Tbase 218.46 K
+column dry_air vmr
+column h2o vmr 3.127248e-06
+
+layer
+Pbase 42.6236 mbar
+Tbase 218.24 K
+column dry_air vmr
+column h2o vmr 3.368728e-06
+
+layer
+Pbase 44.0762 mbar
+Tbase 218.03 K
+column dry_air vmr
+column h2o vmr 3.626036e-06
+
+layer
+Pbase 45.5645 mbar
+Tbase 217.82 K
+column dry_air vmr
+column h2o vmr 3.900001e-06
+
+layer
+Pbase 47.0892 mbar
+Tbase 217.61 K
+column dry_air vmr
+column h2o vmr 4.191477e-06
+
+layer
+Pbase 48.6507 mbar
+Tbase 217.4 K
+column dry_air vmr
+column h2o vmr 4.501353e-06
+
+layer
+Pbase 50.2492 mbar
+Tbase 217.19 K
+column dry_air vmr
+column h2o vmr 4.830543e-06
+
+layer
+Pbase 51.8852 mbar
+Tbase 216.99 K
+column dry_air vmr
+column h2o vmr 5.179994e-06
+
+layer
+Pbase 53.5591 mbar
+Tbase 216.79 K
+column dry_air vmr
+column h2o vmr 5.550684e-06
+
+layer
+Pbase 55.2708 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 5.943620e-06
+
+layer
+Pbase 57.0202 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 6.364620e-06
+
+layer
+Pbase 58.8069 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 6.811964e-06
+
+layer
+Pbase 60.6311 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 7.285810e-06
+
+layer
+Pbase 62.493 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 7.787390e-06
+
+layer
+Pbase 64.3928 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 8.317973e-06
+
+layer
+Pbase 66.3308 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 8.878866e-06
+
+layer
+Pbase 68.307 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 9.471412e-06
+
+layer
+Pbase 70.3216 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.009699e-05
+
+layer
+Pbase 72.3749 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.075703e-05
+
+layer
+Pbase 74.4669 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.145297e-05
+
+layer
+Pbase 76.5978 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.218631e-05
+
+layer
+Pbase 78.7676 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.295859e-05
+
+layer
+Pbase 80.9765 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.377136e-05
+
+layer
+Pbase 83.2247 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.462623e-05
+
+layer
+Pbase 85.512 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.552484e-05
+
+layer
+Pbase 87.8386 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.646887e-05
+
+layer
+Pbase 90.2046 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.746001e-05
+
+layer
+Pbase 92.6099 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.850001e-05
+
+layer
+Pbase 95.0546 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.959065e-05
+
+layer
+Pbase 97.5387 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 2.073375e-05
+
+layer
+Pbase 100.062 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 2.193113e-05
+
+layer
+Pbase 102.625 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 2.318467e-05
+
+layer
+Pbase 105.227 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 2.449629e-05
+
+layer
+Pbase 107.868 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 2.586790e-05
+
+layer
+Pbase 110.549 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 2.730148e-05
+
+layer
+Pbase 113.268 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 2.879901e-05
+
+layer
+Pbase 116.027 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 3.036250e-05
+
+layer
+Pbase 118.824 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 3.199401e-05
+
+layer
+Pbase 121.66 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 3.369560e-05
+
+layer
+Pbase 124.535 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 3.546935e-05
+
+layer
+Pbase 127.448 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 3.731738e-05
+
+layer
+Pbase 130.399 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 3.924182e-05
+
+layer
+Pbase 133.389 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 4.124481e-05
+
+layer
+Pbase 136.416 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 4.332853e-05
+
+layer
+Pbase 139.481 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 4.549516e-05
+
+layer
+Pbase 142.584 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 4.774689e-05
+
+layer
+Pbase 145.724 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 5.008595e-05
+
+layer
+Pbase 148.901 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 5.251454e-05
+
+layer
+Pbase 152.114 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 5.503491e-05
+
+layer
+Pbase 155.364 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 5.764929e-05
+
+layer
+Pbase 158.651 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 6.035993e-05
+
+layer
+Pbase 161.973 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 6.316909e-05
+
+layer
+Pbase 165.331 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 6.607900e-05
+
+layer
+Pbase 168.724 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 6.909194e-05
+
+layer
+Pbase 172.152 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 7.221016e-05
+
+layer
+Pbase 175.615 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 7.543590e-05
+
+layer
+Pbase 179.112 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 7.877142e-05
+
+layer
+Pbase 182.643 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 8.221895e-05
+
+layer
+Pbase 186.207 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 8.578074e-05
+
+layer
+Pbase 189.805 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 8.945900e-05
+
+layer
+Pbase 193.436 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 9.325595e-05
+
+layer
+Pbase 197.099 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 9.717379e-05
+
+layer
+Pbase 200.794 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.012147e-04
+
+layer
+Pbase 204.52 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.053808e-04
+
+layer
+Pbase 208.278 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.096744e-04
+
+layer
+Pbase 212.066 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.140974e-04
+
+layer
+Pbase 215.885 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.186521e-04
+
+layer
+Pbase 219.734 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.233404e-04
+
+layer
+Pbase 223.612 mbar
+Tbase 216.65 K
+column dry_air vmr
+column h2o vmr 1.281645e-04
+
+layer
+Pbase 227.517 mbar
+Tbase 216.87 K
+column dry_air vmr
+column h2o vmr 1.331263e-04
+
+layer
+Pbase 231.442 mbar
+Tbase 217.57 K
+column dry_air vmr
+column h2o vmr 1.385959e-04
+
+layer
+Pbase 235.382 mbar
+Tbase 218.27 K
+column dry_air vmr
+column h2o vmr 1.443295e-04
+
+layer
+Pbase 239.337 mbar
+Tbase 218.97 K
+column dry_air vmr
+column h2o vmr 1.502462e-04
+
+layer
+Pbase 243.305 mbar
+Tbase 219.65 K
+column dry_air vmr
+column h2o vmr 1.563495e-04
+
+layer
+Pbase 247.286 mbar
+Tbase 220.33 K
+column dry_air vmr
+column h2o vmr 1.626429e-04
+
+layer
+Pbase 251.279 mbar
+Tbase 221.01 K
+column dry_air vmr
+column h2o vmr 1.691300e-04
+
+layer
+Pbase 255.284 mbar
+Tbase 221.67 K
+column dry_air vmr
+column h2o vmr 1.758142e-04
+
+layer
+Pbase 259.3 mbar
+Tbase 222.33 K
+column dry_air vmr
+column h2o vmr 1.826991e-04
+
+layer
+Pbase 263.326 mbar
+Tbase 222.98 K
+column dry_air vmr
+column h2o vmr 1.897880e-04
+
+layer
+Pbase 267.362 mbar
+Tbase 223.63 K
+column dry_air vmr
+column h2o vmr 1.970844e-04
+
+layer
+Pbase 271.408 mbar
+Tbase 224.27 K
+column dry_air vmr
+column h2o vmr 2.045917e-04
+
+layer
+Pbase 275.462 mbar
+Tbase 224.9 K
+column dry_air vmr
+column h2o vmr 2.123133e-04
+
+layer
+Pbase 279.524 mbar
+Tbase 225.53 K
+column dry_air vmr
+column h2o vmr 2.202524e-04
+
+layer
+Pbase 283.593 mbar
+Tbase 226.15 K
+column dry_air vmr
+column h2o vmr 2.284124e-04
+
+layer
+Pbase 287.669 mbar
+Tbase 226.77 K
+column dry_air vmr
+column h2o vmr 2.367964e-04
+
+layer
+Pbase 291.751 mbar
+Tbase 227.37 K
+column dry_air vmr
+column h2o vmr 2.454077e-04
+
+layer
+Pbase 295.839 mbar
+Tbase 227.98 K
+column dry_air vmr
+column h2o vmr 2.542495e-04
+
+layer
+Pbase 299.931 mbar
+Tbase 228.57 K
+column dry_air vmr
+column h2o vmr 2.633248e-04
+
+layer
+Pbase 304.029 mbar
+Tbase 229.17 K
+column dry_air vmr
+column h2o vmr 2.726366e-04
+
+layer
+Pbase 308.13 mbar
+Tbase 229.75 K
+column dry_air vmr
+column h2o vmr 2.821881e-04
+
+layer
+Pbase 312.234 mbar
+Tbase 230.33 K
+column dry_air vmr
+column h2o vmr 2.919821e-04
+
+layer
+Pbase 316.341 mbar
+Tbase 230.9 K
+column dry_air vmr
+column h2o vmr 3.020214e-04
+
+layer
+Pbase 320.451 mbar
+Tbase 231.47 K
+column dry_air vmr
+column h2o vmr 3.123090e-04
+
+layer
+Pbase 324.562 mbar
+Tbase 232.03 K
+column dry_air vmr
+column h2o vmr 3.228475e-04
+
+layer
+Pbase 328.674 mbar
+Tbase 232.59 K
+column dry_air vmr
+column h2o vmr 3.336397e-04
+
+layer
+Pbase 332.787 mbar
+Tbase 233.14 K
+column dry_air vmr
+column h2o vmr 3.446881e-04
+
+layer
+Pbase 336.9 mbar
+Tbase 233.69 K
+column dry_air vmr
+column h2o vmr 3.559953e-04
+
+layer
+Pbase 341.013 mbar
+Tbase 234.23 K
+column dry_air vmr
+column h2o vmr 3.675638e-04
+
+layer
+Pbase 345.125 mbar
+Tbase 234.76 K
+column dry_air vmr
+column h2o vmr 3.793959e-04
+
+layer
+Pbase 349.235 mbar
+Tbase 235.29 K
+column dry_air vmr
+column h2o vmr 3.914940e-04
+
+layer
+Pbase 353.344 mbar
+Tbase 235.81 K
+column dry_air vmr
+column h2o vmr 4.038603e-04
+
+layer
+Pbase 357.45 mbar
+Tbase 236.33 K
+column dry_air vmr
+column h2o vmr 4.164970e-04
+
+layer
+Pbase 361.554 mbar
+Tbase 236.85 K
+column dry_air vmr
+column h2o vmr 4.294060e-04
+
+layer
+Pbase 365.654 mbar
+Tbase 237.36 K
+column dry_air vmr
+column h2o vmr 4.425895e-04
+
+layer
+Pbase 369.751 mbar
+Tbase 237.86 K
+column dry_air vmr
+column h2o vmr 4.560493e-04
+
+layer
+Pbase 373.843 mbar
+Tbase 238.36 K
+column dry_air vmr
+column h2o vmr 4.697873e-04
+
+layer
+Pbase 377.931 mbar
+Tbase 238.85 K
+column dry_air vmr
+column h2o vmr 4.838050e-04
+
+layer
+Pbase 382.014 mbar
+Tbase 239.34 K
+column dry_air vmr
+column h2o vmr 4.981042e-04
+
+layer
+Pbase 386.092 mbar
+Tbase 239.82 K
+column dry_air vmr
+column h2o vmr 5.126864e-04
+
+layer
+Pbase 390.164 mbar
+Tbase 240.3 K
+column dry_air vmr
+column h2o vmr 5.275530e-04
+
+layer
+Pbase 394.229 mbar
+Tbase 240.78 K
+column dry_air vmr
+column h2o vmr 5.427054e-04
+
+layer
+Pbase 398.288 mbar
+Tbase 241.25 K
+column dry_air vmr
+column h2o vmr 5.581448e-04
+
+layer
+Pbase 402.34 mbar
+Tbase 241.71 K
+column dry_air vmr
+column h2o vmr 5.738723e-04
+
+layer
+Pbase 406.384 mbar
+Tbase 242.17 K
+column dry_air vmr
+column h2o vmr 5.898891e-04
+
+layer
+Pbase 410.421 mbar
+Tbase 242.63 K
+column dry_air vmr
+column h2o vmr 6.061960e-04
+
+layer
+Pbase 414.449 mbar
+Tbase 243.08 K
+column dry_air vmr
+column h2o vmr 6.227939e-04
+
+layer
+Pbase 418.469 mbar
+Tbase 243.53 K
+column dry_air vmr
+column h2o vmr 6.396835e-04
+
+layer
+Pbase 422.481 mbar
+Tbase 243.97 K
+column dry_air vmr
+column h2o vmr 6.568656e-04
+
+layer
+Pbase 426.482 mbar
+Tbase 244.41 K
+column dry_air vmr
+column h2o vmr 6.743406e-04
+
+layer
+Pbase 430.475 mbar
+Tbase 244.84 K
+column dry_air vmr
+column h2o vmr 6.921090e-04
+
+layer
+Pbase 434.457 mbar
+Tbase 245.27 K
+column dry_air vmr
+column h2o vmr 7.101711e-04
+
+layer
+Pbase 438.43 mbar
+Tbase 245.7 K
+column dry_air vmr
+column h2o vmr 7.285271e-04
+
+layer
+Pbase 442.391 mbar
+Tbase 246.12 K
+column dry_air vmr
+column h2o vmr 7.471773e-04
+
+layer
+Pbase 446.342 mbar
+Tbase 246.53 K
+column dry_air vmr
+column h2o vmr 7.661216e-04
+
+layer
+Pbase 450.282 mbar
+Tbase 246.95 K
+column dry_air vmr
+column h2o vmr 7.853599e-04
+
+layer
+Pbase 454.21 mbar
+Tbase 247.35 K
+column dry_air vmr
+column h2o vmr 8.048920e-04
+
+layer
+Pbase 458.127 mbar
+Tbase 247.76 K
+column dry_air vmr
+column h2o vmr 8.247178e-04
+
+layer
+Pbase 462.032 mbar
+Tbase 248.16 K
+column dry_air vmr
+column h2o vmr 8.448367e-04
+
+layer
+Pbase 465.924 mbar
+Tbase 248.56 K
+column dry_air vmr
+column h2o vmr 8.652484e-04
+
+layer
+Pbase 469.804 mbar
+Tbase 248.95 K
+column dry_air vmr
+column h2o vmr 8.859522e-04
+
+layer
+Pbase 473.671 mbar
+Tbase 249.34 K
+column dry_air vmr
+column h2o vmr 9.069474e-04
+
+layer
+Pbase 477.525 mbar
+Tbase 249.72 K
+column dry_air vmr
+column h2o vmr 9.282333e-04
+
+layer
+Pbase 481.365 mbar
+Tbase 250.1 K
+column dry_air vmr
+column h2o vmr 9.498089e-04
+
+layer
+Pbase 485.193 mbar
+Tbase 250.48 K
+column dry_air vmr
+column h2o vmr 9.716733e-04
+
+layer
+Pbase 489.006 mbar
+Tbase 250.85 K
+column dry_air vmr
+column h2o vmr 9.938254e-04
+
+layer
+Pbase 492.805 mbar
+Tbase 251.22 K
+column dry_air vmr
+column h2o vmr 1.016264e-03
+
+layer
+Pbase 496.59 mbar
+Tbase 251.59 K
+column dry_air vmr
+column h2o vmr 1.038988e-03
+
+layer
+Pbase 500.361 mbar
+Tbase 251.95 K
+column dry_air vmr
+column h2o vmr 1.061995e-03
+
+layer
+Pbase 504.117 mbar
+Tbase 252.31 K
+column dry_air vmr
+column h2o vmr 1.085285e-03
+
+layer
+Pbase 507.858 mbar
+Tbase 252.66 K
+column dry_air vmr
+column h2o vmr 1.108856e-03
+
+layer
+Pbase 511.584 mbar
+Tbase 253.02 K
+column dry_air vmr
+column h2o vmr 1.132706e-03
+
+layer
+Pbase 515.295 mbar
+Tbase 253.36 K
+column dry_air vmr
+column h2o vmr 1.156833e-03
+
+layer
+Pbase 518.991 mbar
+Tbase 253.71 K
+column dry_air vmr
+column h2o vmr 1.181235e-03
+
+layer
+Pbase 522.671 mbar
+Tbase 254.05 K
+column dry_air vmr
+column h2o vmr 1.205912e-03
+
+layer
+Pbase 526.335 mbar
+Tbase 254.39 K
+column dry_air vmr
+column h2o vmr 1.230859e-03
+
+layer
+Pbase 529.983 mbar
+Tbase 254.72 K
+column dry_air vmr
+column h2o vmr 1.256077e-03
+
+layer
+Pbase 533.615 mbar
+Tbase 255.05 K
+column dry_air vmr
+column h2o vmr 1.281561e-03
+
+layer
+Pbase 537.231 mbar
+Tbase 255.38 K
+column dry_air vmr
+column h2o vmr 1.307311e-03
+
+layer
+Pbase 540.83 mbar
+Tbase 255.71 K
+column dry_air vmr
+column h2o vmr 1.333323e-03
+
+layer
+Pbase 544.413 mbar
+Tbase 256.03 K
+column dry_air vmr
+column h2o vmr 1.359595e-03
+
+layer
+Pbase 547.979 mbar
+Tbase 256.35 K
+column dry_air vmr
+column h2o vmr 1.386125e-03
+
+layer
+Pbase 551.529 mbar
+Tbase 256.66 K
+column dry_air vmr
+column h2o vmr 1.412910e-03
+
+layer
+Pbase 555.061 mbar
+Tbase 256.97 K
+column dry_air vmr
+column h2o vmr 1.439948e-03

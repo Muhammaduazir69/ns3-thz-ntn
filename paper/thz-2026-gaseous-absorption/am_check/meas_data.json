@@ -1,0 +1,226 @@
+{
+ "_note": "Published measured values used by meas_check2.py (round 3, D13). Each entry quotes its source; see sim/data/README.md.",
+ "zenith": [
+  {
+   "id": "archibald",
+   "ref": "Archibald et al. 2002, MNRAS 336, 1, Table 1, 450W:850W filters (DOI 10.1046/j.1365-8711.2002.05582.x)",
+   "site": "Mauna Kea",
+   "site_km": 4.1,
+   "airmass": 1.5,
+   "V_mm": [
+    1.0,
+    2.0
+   ],
+   "profiles": [
+    "low",
+    "mid-summer",
+    "mid-winter"
+   ],
+   "bands": [
+    {
+     "name": "850um",
+     "lo_ghz": 336.0,
+     "hi_ghz": 371.0,
+     "slope": 4.02,
+     "err": 0.03
+    },
+    {
+     "name": "450um",
+     "lo_ghz": 643.0,
+     "hi_ghz": 691.0,
+     "slope": 26.2,
+     "err": 0.3
+    }
+   ],
+   "band_note": "SCUBA filter widths are not tabulated; the SCUBA-2 half-power bands (Holland et al. 2013) are used as a proxy"
+  },
+  {
+   "id": "dempsey",
+   "ref": "Dempsey et al. 2013, MNRAS 430, 2534, Sec. 3.2 (DOI 10.1093/mnras/stt090); bands: Holland et al. 2013, MNRAS 430, 2513, Sec. 2",
+   "site": "Mauna Kea",
+   "site_km": 4.1,
+   "airmass": 1.5,
+   "V_mm": [
+    1.0,
+    2.0
+   ],
+   "profiles": [
+    "low",
+    "mid-summer",
+    "mid-winter"
+   ],
+   "bands": [
+    {
+     "name": "850um",
+     "lo_ghz": 336.0,
+     "hi_ghz": 371.0,
+     "slope": 4.6,
+     "err": null
+    },
+    {
+     "name": "450um",
+     "lo_ghz": 643.0,
+     "hi_ghz": 691.0,
+     "slope": 26.0,
+     "err": null
+    }
+   ]
+  },
+  {
+   "id": "radford_mk",
+   "ref": "Radford and Peterson 2016, PASP 128, 075001, eq. (8) (DOI 10.1088/1538-3873/128/965/075001)",
+   "site": "Maunakea",
+   "site_km": 4.1,
+   "airmass": 1.5,
+   "V_mm": [
+    1.0,
+    2.0
+   ],
+   "profiles": [
+    "low",
+    "mid-summer",
+    "mid-winter"
+   ],
+   "bands": [
+    {
+     "name": "350um",
+     "lo_ghz": 798.5,
+     "hi_ghz": 901.5,
+     "slope": 26.0,
+     "err": 3.0
+    }
+   ]
+  },
+  {
+   "id": "radford_cj",
+   "ref": "Radford and Peterson 2016, PASP 128, 075001, eq. (9)",
+   "site": "Chajnantor",
+   "site_km": 5.06,
+   "airmass": 1.5,
+   "V_mm": [
+    0.5,
+    1.5
+   ],
+   "profiles": [
+    "low",
+    "mid-summer",
+    "mid-winter"
+   ],
+   "bands": [
+    {
+     "name": "350um",
+     "lo_ghz": 798.5,
+     "hi_ghz": 901.5,
+     "slope": 29.0,
+     "err": 3.0
+    }
+   ]
+  }
+ ],
+ "pwv": [
+  {
+   "id": "chamberlin",
+   "ref": "Chamberlin, Lane and Stark 1997, ApJ 476, 428, Table 2, LO 493.66 GHz (DOI 10.1086/303621)",
+   "site": "South Pole",
+   "site_km": 2.835,
+   "V_mm": [
+    0.25,
+    0.5
+   ],
+   "profiles": [
+    "high-winter"
+   ],
+   "dsb_ghz": [
+    492.16,
+    495.16
+   ],
+   "if_bw_ghz": 0.7,
+   "a": 0.33,
+   "a_err": 0.02,
+   "b_per_mm": 1.49,
+   "b_err": 0.07,
+   "b225_per_mm": 0.069,
+   "b225_err": 0.002,
+   "profile_note": "the data are from days 137 to 321 (austral winter and spring), so the P.835-6 high-latitude winter profile is used"
+  }
+ ],
+ "horizontal": [
+  {
+   "id": "yang2014",
+   "ref": "Yang, Mandehgar and Grischkowsky 2014, Opt. Express 22, 4388, p. 4390 and p. 4399 (DOI 10.1364/OE.22.004388)",
+   "kind": "water",
+   "state": {
+    "T_K": 293.15,
+    "P_hpa": 1004.0,
+    "rho_gm3": 7.0,
+    "rho_err_gm3": 0.04
+   },
+   "note": "water-vapor absorption of 7.0 g/m3 (cross term removed), 137 m path; window minima quoted at 9.3 g/m3 after scaling by 1.33, divided back here",
+   "points": [
+    {
+     "name": "410",
+     "lo_ghz": 400.0,
+     "hi_ghz": 420.0,
+     "meas": 14.3,
+     "err": null
+    },
+    {
+     "name": "680",
+     "lo_ghz": 660.0,
+     "hi_ghz": 700.0,
+     "meas": 51.1,
+     "err": null
+    },
+    {
+     "name": "850",
+     "lo_ghz": 820.0,
+     "hi_ghz": 880.0,
+     "meas": 54.1,
+     "err": null
+    }
+   ],
+   "err_note": "No uncertainty is stated for the attenuation values; the only stated accuracy is the vapor density along the path, 0.04 g/m3 (about RH 2%), from the 0.1 ps transit-time accuracy (p. 4395 of the paper)."
+  },
+  {
+   "id": "yang2011",
+   "ref": "Yang, Shutler and Grischkowsky 2011, Opt. Express 19, 8830, Table 1 (DOI 10.1364/OE.19.008830)",
+   "kind": "total",
+   "state": {
+    "T_K": 294.15,
+    "P_hpa": 1004.0,
+    "rh_pct": 51.0
+   },
+   "note": "6.18 m path, repeatability +-0.5 % in amplitude (about +-7 dB/km); pressure not stated (1004 hPa assumed); superseded by yang2014",
+   "points": [
+    {
+     "name": "350",
+     "lo_ghz": 335.0,
+     "hi_ghz": 365.0,
+     "meas": 21.0,
+     "err": 7.0
+    },
+    {
+     "name": "410",
+     "lo_ghz": 400.0,
+     "hi_ghz": 420.0,
+     "meas": 28.0,
+     "err": 7.0
+    },
+    {
+     "name": "680",
+     "lo_ghz": 660.0,
+     "hi_ghz": 700.0,
+     "meas": 72.0,
+     "err": 7.0
+    },
+    {
+     "name": "850",
+     "lo_ghz": 820.0,
+     "hi_ghz": 880.0,
+     "meas": 92.0,
+     "err": 7.0
+    }
+   ]
+  }
+ ]
+}

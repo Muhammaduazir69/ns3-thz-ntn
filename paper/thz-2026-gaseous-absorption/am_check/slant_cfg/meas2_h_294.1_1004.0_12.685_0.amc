@@ -1,0 +1,12 @@
+f %1 %2 %3 %4 %5 %6
+output f GHz tau
+za 0 deg
+tol 1e-5
+T0 2.7 K
+
+layer
+P 1004 mbar
+T 294.15 K
+h 1000 m
+column dry_air vmr
+column h2o vmr 1.263398e-02
