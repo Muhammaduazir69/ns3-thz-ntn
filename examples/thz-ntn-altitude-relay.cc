@@ -169,7 +169,28 @@ main(int argc, char* argv[])
             pc.argv = argv;
             pc.link.freqHz = companionFreqGhz * 1e9;
             pc.link.bandwidthHz = 1e9;
-            res[i] = thzkit::RunPass(pc);
+            if (i == 0)
+            {
+                res[i] = thzkit::RunPass(pc);
+                continue;
+            }
+            // Globe scene of the relay pass: the SGP4 satellite, the HAPS relay and, as a
+            // device-less context node, the ground endpoint of the first pass (same site,
+            // altitude 0), so the scene shows both endpoints the sweep compares.
+            res[i] = thzkit::RunPass(
+                pc,
+                [&outputDir](Ptr<thzntn::ThzNtnPacketLink>, Ptr<MobilityModel>,
+                             Ptr<MobilityModel> relay) {
+                    double lat;
+                    double lon;
+                    double alt;
+                    ntngeo::EcefToGeodetic(relay->GetPosition(), lat, lon, alt);
+                    auto groundMob = CreateObject<ConstantPositionMobilityModel>();
+                    groundMob->SetPosition(ntngeo::GeodeticToEcef(lat, lon, 0.0));
+                    Ptr<Node> ground = CreateObject<Node>();
+                    ground->AggregateObject(groundMob);
+                    ns3::ntnobs::StartSceneFromNodeList(outputDir);
+                });
         }
         std::printf("# measured companion at %.0f GHz, same satellite and site:\n"
                     "#   endpoint   PDR       goodput(Mb/s)  ACM rate(Mb/s)  OWD(ms)\n"

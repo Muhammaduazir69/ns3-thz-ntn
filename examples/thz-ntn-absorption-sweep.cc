@@ -225,6 +225,10 @@ main(int argc, char* argv[])
                             {
                                 lutOk = a->LoadAtmosphericLut(lutFile);
                             }
+                            // Globe scene of the measured pass (SGP4 satellite and the
+                            // TR 38.811 terminal), next to the run record.
+                            ns3::ntnobs::StartSceneFromNodeList(
+                                std::filesystem::path(out).parent_path().string());
                         });
         if (!lutOk)
         {

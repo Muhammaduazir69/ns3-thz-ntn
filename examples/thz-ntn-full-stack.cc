@@ -446,6 +446,9 @@ main(int argc, char* argv[])
 
     // ---- Run ns-3 simulation (drives the SGP4 mobility) ----
     Simulator::Stop(Seconds(duration));
+    // Globe scene of the pass: the two SGP4 satellites, the terminal and the RIS panel in
+    // the ENU frame the steps above evaluate (the recorder maps it back onto the Earth).
+    ns3::ntnobs::StartSceneFromNodeList(".");
     Simulator::Run();
 
     // ---- Summary ----

@@ -123,7 +123,12 @@ main(int argc, char* argv[])
 
     std::cout << "thz-ntn-native-300ghz-traffic: REAL PACKETS at " << freqGhz << " GHz\n"
               << "  propagation: Friis + ThzNtnPropagationLossModel (no 3GPP 100 GHz cap)\n";
-    const thzkit::PassResult r = thzkit::RunPass(cfg);
+    // Globe scene of the measured pass (SGP4 satellite and the TR 38.811 terminal).
+    const thzkit::PassResult r = thzkit::RunPass(
+        cfg,
+        [&outputDir](Ptr<thzntn::ThzNtnPacketLink>, Ptr<MobilityModel>, Ptr<MobilityModel>) {
+            ns3::ntnobs::StartSceneFromNodeList(outputDir);
+        });
 
     std::cout << "\n--- measured at " << freqGhz << " GHz ---\n"
               << "  packets tx/rx:   " << r.txPackets << " / " << r.rxPackets << "  (PDR "
